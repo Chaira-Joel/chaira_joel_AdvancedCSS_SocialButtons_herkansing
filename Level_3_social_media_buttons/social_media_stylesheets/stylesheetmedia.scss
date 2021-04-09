@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  $clr-blog: #e17b77;
+  $clr-twitter: #00aced;
+  $clr-facebook: #3b5998;
+  $clr-linked: #007bb6;
+  $clr-github: #333;
+  $clr-font: #fff;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #c3cfe2;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* 
+navigatiepagina */
+
+.social-media-bar-parent {
+  float: right;
+  height: 100vh;
+  display: flex;
+
+  &__bar {
+    margin: auto 0;
+    width: 70px;
+    height: 300px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  &__bar li {
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  /* links naar de pagina's */
+  &__bar li a {
+    color: $clr-font;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    padding-left: 0%;
+    transition: all 0.1s linear;
+  }
+
+  /* icoon kleuren */
+  &__bar li:nth-child(1) a {
+    background: $clr-blog;
+  }
+  &__bar li:nth-child(2) a {
+    background: $-clr-twitter;
+  }
+  &__bar li:nth-child(3) a {
+    background: $clr-linked;
+  }
+  &__bar li:nth-child(4) a {
+    background: $clr-facebook;
+  }
+  &__bar li:nth-child(5) a {
+    background: $clr-github;
+  }
+
+  /* icoontjes */
+  &__bar li a i {
+    position: absolute;
+    top: 17px;
+    left: 25px;
+    font-size: 25px;
+  }
+
+  /* tekst bij de icoontjes */
+  &__bar li a span {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: none;
+    text-decoration: underline;
+    display: none;
+    width: 250px;
+  }
+
+  &__bar ul li a:hover {
+    width: 280px;
+    transform: translateX(-211px);
+    border-bottom: 1px solid rgba(0, 0, 0.5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0.3);
+  }
+
+  &__bar ul li a:hover span {
+    display: block;
+    padding-left: 25%;
+  }
+}

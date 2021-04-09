@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: #c3cfe2;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* 
+navigatiepagina */
+
+.social-media-bar-parent {
+  float: right;
+  height: 100vh;
+  display: flex;
+}
+
+.social-media__bar {
+  margin: auto 0;
+  width: 70px;
+  height: 300px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.social-media__bar li {
+  height: 60px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* links naar de pagina's */
+.social-media__bar li a {
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  transition: all 0.1s linear;
+}
+
+/* icoon kleurtjes */
+.social-media__bar li:nth-child(1) a {
+  background: #e17b77;
+}
+.social-media__bar li:nth-child(2) a {
+  background: #00aced;
+}
+.social-media__bar li:nth-child(3) a {
+  background: #007bb6;
+}
+.social-media__bar li:nth-child(4) a {
+  background: #3b5998;
+}
+.social-media__bar li:nth-child(5) a {
+  background: #333;
+}
+
+/* icoontjes */
+.social-media__bar li a i {
+  position: absolute;
+  top: 17px;
+  left: 25px;
+  font-size: 25px;
+}
+
+/* tekst bij de icoontjes */
+.social-media__bar li a span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: none;
+  text-decoration: underline;
+  display: none;
+  width: 250px;
+}
+
+.social-media__bar ul li a:hover {
+  width: 280px;
+  transform: translateX(-211px);
+  border-bottom: 1px solid rgba(0, 0, 0.5);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0.3);
+}
+
+.social-media__bar ul li a:hover span {
+  display: block;
+  padding-left: 25%;
+}
